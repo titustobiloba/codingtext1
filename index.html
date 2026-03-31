@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    .stats-section {
+      background: linear-gradient(90deg, #0b4f7a, #0e6ea8);
+      /* background-image: url(https://sheleadsafrica.org/wp-content/uploads/2023/11/pattern.png); */
+      padding: 60px 0;
+      margin-top: 0;
+      background-color: #0187dc;
+    }
+
+    .carousel {
+      margin-bottom: 0;
+    }
+
+    .carousel-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .stat-number {
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    .stat-text {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .button {
+      background: #e6f0f7;
+      color: #0b4f7a;
+      border-radius: 25px;
+      padding: 10px 20px;
+      border: none;
+    }
+    .btn{
+      border-radius: 12px;
+    }
+
+    .btn-custom {
+      background-color: #0087db;
+      color: white;
+      border-radius: 12px;
+      width: 100px;
+    }
+
+    .btn-custom:hover {
+      background-color: #006ba3;
+      color: white;
+    }
+
+    #slareport {
+      height: 50px;
+
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    #h55 {
+      background-color: #0087db;
+      width: 300px;
+      padding: 5px 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-light">
+    <div class="container-fluid ms-5">
+      <a class="navbar-brand" href="#"><img style="height: 100px;"
+          src="https://sheleadsafrica.org/wp-content/uploads/2023/11/cropped-cropped-Application-for-Cohort-7-2.png"
+          alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">who we are </a></li>
+              <li><a class="dropdown-item" href="#">our journey</a></li>
+
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              our service
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">professional services</a></li>
+              <li><a class="dropdown-item" href="#">products</a></li>
+
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              programe
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">past programe</a></li>
+              <li><a class="dropdown-item" href="#">current progrmme</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              events
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Business Boost Lab</a></li>
+              <li><a class="dropdown-item" href="#">Career Fair</a></li>
+              <li><a class="dropdown-item" href="#">past Events</a></li>
+              <li><a class="dropdown-item" href="#">Partner Based Events</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">carrer</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              community
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">SLA Top 50Under30</a></li>
+              <li><a class="dropdown-item" href="#">contribute</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">resource</a>
+          </li>
+        </ul>
+        <div class="d-flex me-5">
+          <form class="d-flex me-5" role="search">
+          <button class="btn btn-custom" type="submit">Search</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleCaptions" class="carousel slide mb-0 pb-5">
+    <div class="carousel-inner">
+      <div class="carousel-item active" id="image">
+        <img src="http://127.0.0.1:5501/SLA-30-04-16-23%20(1).jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-block d-md-block d-sm-block">
+          <h5>Empowering Her Future, One Skill at a Time.  Join the BoostHer Program</h5>
+          <p>Through personalised coaching, skill-building training, and a supportive community, this program equips you with the tools and confidence to thrive in your career and entrepreneurial ventures.</p>
+          <button class="btn btn-custom">Apply Now</button>
+        </div>
+      </div>
+      <div class="carousel-item" id="image">
+        <img src="https://sheleadsafrica.org/wp-content/uploads/2023/12/Participants-playing-a-networking-game.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-block d-md-block d-sm-block">
+          <h5>The #1 destination for resources and programs catering to smart and ambitious African women</h5>
+          <p><a href="#"><button class="btn btn-custom">see our program</button></a></p>
+        </div>
+      </div>
+      <div class="carousel-item" id="image">
+        <img src="https://sheleadsafrica.org/wp-content/uploads/2023/12/Helen-Gichohi-MD-of-Equity-Group-Foundation.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-block d-md-block d-sm-block">
+          <h5>Spark and drive the potential of African women. Sign Up for our Newsletters. </h5>
+          <p>She Leads Africa and has empowering newsletters that support you in making your dreams a reality! We have plenty of informative resources plus plenty of inspiring stories to motivate you on your journey. Sign up now and let's start turning our dreams into reality together!</p>
+          <button class="btn btn-custom">sign up</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <section class="stats-section">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Left Text -->
+        <div class="col-lg-4 mb-4 p-">
+          <p>
+            She Leads Africa is a community of Young, Ambitious and Vibrant Women
+            Across Africa Platforms celebrating innovation and business often feature
+            networking opportunities that are valuable.
+          </p>
+
+          <button class="button">Join Our Community</button>
+        </div>
+
+        <!-- Stats -->
+        <div class="col-lg-8">
+          <div class="row text-center">
+
+            <div class="col-md-4 mb-4">
+              <div class="stat-number">30K+</div>
+              <div class="stat-text">Live virtual event attendees from 2020 - 2022</div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="stat-number">8K+</div>
+              <div class="stat-text">Physical event attendees for SLA events</div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="stat-number">120+</div>
+              <div class="stat-text">Entrepreneurs scaled up through SLA programs</div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="stat-number">50k</div>
+              <div class="stat-text">Entrepreneurs reached across Nigeria, Kenya and South Africa</div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="stat-number">200k</div>
+              <div class="stat-text">Impacted women globally and in Africa</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+<body class="bg-light">
+
+<div class="container py-5">
+
+    <div class="row g-4">
+
+        <!-- LEFT COLUMN (ALWAYS TOP ON LARGE SCREEN) -->
+        <div class="col-12 col-lg-6 text-lg-start">
+            <h6 class="text-primary fw-bold">Impacted women globally and in Africa</h6>
+
+            <a href="#" class="btn btn-primary px-4 py-2 fw-semibold mt-3">
+                Download the SLA 2015-2025 Impact Report Here
+            </a>
+        </div>
+
+        <!-- RIGHT COLUMN (IMAGE) -->
+        <div class="col-12 col-lg-6 text-center">
+            <img src="https://sheleadsafrica.org/wp-content/uploads/elementor/thumbs/2015-2025-IMPACT-REPORT-rexzrcx5hwzztzthy7zcj1jh8q1jd7cumpqhlelme8.jpg" class="img-fluid" alt="She Leads Africa Impact Report">
+        </div>
+
+    </div>
+
+</div>
+
+
+    <div class="row ms-5">
+      <div class="col-sm-6">
+        <h5>benefit of joining sla</h5>
+        <h1>start living your best life</h1>
+      </div>
+      <div class="col-sm-6 ">
+        <button class="btn btn-primary" type="button">Join Our tribe</button>
+      </div>
+    </div>
+  
+
+  <div class="container my-5">
+
+    <div class="row g-3">
+
+
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card text-white bg-primary border-0">
+          <div class="card-body d-flex align-items-center">
+
+            <div class="bg-light text-dark rounded-circle d-flex justify-content-center align-items-center me-3"
+              style="width:40px;height:40px;">
+              <img src="https://sheleadsafrica.org/wp-content/uploads/2023/11/Group-41.png" alt="">
+
+            </div>
+
+            <div>
+              <h6 class="card-title mb-1">Reach Your Goals</h6>
+              <p class="card-text small mb-0">We are committed to helping you achieve your goals.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card border-0 bg-light">
+          <div class="card-body d-flex align-items -center">
+
+            <div class="bg-white rounded-circle d-flex justify-content-center align-items-center me-3"
+              style="width:40px;height:40px;">
+              <img src="https://sheleadsafrica.org/wp-content/uploads/2023/11/Group-42.png" alt="">
+            </div>
+
+            <div>
+              <h6 class="card-title mb-1">Get Promoted</h6>
+              <p class="card-text small mb-0">Develop skills that help you grow professionally.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card border-0 bg-light">
+          <div class="card-body d-flex align-items-center">
+
+            <div class="bg-white rounded-circle d-flex justify-content-center align-items-center me-3"
+              style="width:40px;height:40px;">
+              <img src="https://sheleadsafrica.org/wp-content/uploads/2023/11/Group-43.png" alt="">
+            </div>
+
+            <div>
+              <h6 class="card-title mb-1">Grow Your Network</h6>
+              <p class="card-text small mb-0">Connect with professionals and expand your network.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container my-5 h-100" style="background-color: #f0f0f0;">
+  <div class="row text-center h-100">
+    <div class="col-6 col-md-4 col-lg-2"><a href="#"><img src="https://sheleadsafrica.org/wp-content/uploads/2023/12/cnn-main-min.png" alt="" class="img-fluid"></a></div>
+    <div class="col-6 col-md-4 col-lg-2"><a href="#"><img src="https://sheleadsafrica.org/wp-content/uploads/2023/12/sahara-min.png" alt="" class="img-fluid"></a></div>
+    <div class="col-6 col-md-4 col-lg-2"><a href="#"><img src="https://sheleadsafrica.org/wp-content/uploads/2023/12/cnbc-min.png" alt="" class="img-fluid"></a></div>
+    <div class="col-6 col-md-4 col-lg-2"><a href="#"><img src="https://sheleadsafrica.org/wp-content/uploads/2023/12/howwemadeitinafrica-min.png" alt="" class="img-fluid"></a></div>
+    <div class="col-6 col-md-4 col-lg-2"><a href="#"><img src="https://sheleadsafrica.org/wp-content/uploads/2023/12/ventures-1-min.png" alt="" class="img-fluid"></a></div>
+    <div class="col-6 col-md-4 col-lg-2"><a href="#"><img src="https://sheleadsafrica.org/wp-content/uploads/2023/12/forbes-logo-png-4-1.png" alt="" class="img-fluid"></a></div>
+  </div>
+</div>
+  <div class="container my-5">
+    <div class="row align-items-center justify-content-center g-4 p-4">
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <img src="https://sheleadsafrica.org/wp-content/uploads/2023/11/image-35.png" alt="" class="img-fluid rounded"
+          style="max-height: 300px; object-fit: cover;">
+      </div>
+      <div class="col-12 col-md-6 text-center text-md-start">
+        <h1>SLA Newsletters</h1>
+        <p>Our newsletters give you access to exclusive resources, career opportunities, and the motivation you need to
+          help you achieve your goals.</p>
+        <button type="button" class="btn btn-primary">Join our Newsletter</button>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+    <div class="row align-items-center justify-content-center g-4 p-4">
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <img src="https://sheleadsafrica.org/wp-content/uploads/2023/11/image-36.png" alt="" class="img-fluid rounded"
+          style="max-height: 300px; object-fit: cover;">
+      </div>
+      <div class="col-12 col-md-6 text-center text-md-start">
+        <h1>SSLA BoostHer Program</h1>
+        <p>The SLA BoostHer Program, in collaboration with Jobberman is a transformative initiative designed to empower
+          young Nigerian women entrepreneurs. This program addresses the unique challenges faced by women in business
+          read the full article and job-seeking through a blended learning experience that includes advanced self-paced
+          courses. Through a blended learning approach, participants will gain access to high-quality training,
+          expert-led masterclasses, and hands-on guidance tailored to their needs, fostering sustainable business growth
+          and economic independence.</p>
+        <button type="button" class="btn btn-primary">Apply Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+    <div class="row align-items-center justify-content-center g-4 p-4">
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <img src="https://sheleadsafrica.org/wp-content/uploads/2023/11/image-37.png" alt="" class="img-fluid rounded"
+          style="max-height: 300px; object-fit: cover;">
+      </div>
+      <div class="col-12 col-md-6 text-center text-md-start">
+        <h1>
+          SLAY Festival</h1>
+        <p>SLAY Festival is a celebration of culture, innovation and business for African women. Learn from speakers,
+          attend masterclasses, shop from women led businesses, have fun with your girls and meet other fab African
+          women.</p>
+        <button type="button" class="btn btn-primary">View Past Events</button>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div></div>
+    <div></div>
+  </div>
+   <div class="row p-5 align-items-center mx-auto">
+    <div class="col-sm-6 align-self-center">
+      <div class="class-title">
+        <p>Upcoming Events</p>
+        <h1>It’s happening!</h1>
+
+      </div>
+    </div>
+    <div class="col-sm-6 d-grid gap-2 d-md-flex justify-content-md-end">
+      <button class="btn btn-primary me-md-2">View Upcoming Events</button></div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-2 g-4 m-5 border border-0">
+  <div class="col-sm-6">
+    <div class="card border-0">
+      <img src="https://sheleadsafrica.org/wp-content/uploads/2023/11/Rectangle-3352-1-1024x444.png" class="card-img-top" alt="...">
+      <div class="card-body border border-0">
+        <h1 class="card-title "><a href="#">SLA BOOSTER PROGRAM</a></h1>
+      
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card border-0">
+      <img src="https://sheleadsafrica.org/wp-content/uploads/2023/11/Rectangle-3352-2.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><a href="#">SLA BOOSTER PROGRAM</a></h5>
+    
+      </div>
+    </div>
+  </div>
+</div>
+ <div class="card text-center" style="background-color: #148ddd;">
+  <img src="https://sheleadsafrica.org/wp-content/uploads/2023/11/pattern.png" class="card-img" alt="..." style="height: 450px;">
+  <div class="card-img-overlay">
+    <h5 class="card-title bg-info border border-info text-white p-2" style="border-radius: 12px;height: 40px;">Subscribe To Our Newsletter</h5>
+    <p class="card-text">Join SLA's community of young, ambitious and vibrant women across Africa</p>
+    <p class="card-text"> <input class="btn" name=""  placeholder="Enter your email"><button class="btn btn-primary border border-danger" type="button">Submit</button></p>
+  </div>
+</div>
+
+<footer class="bg-dark text-light py-5">
+    <div class="container">
+        <div class="row gy-4">
+
+            <!-- Logo + Socials -->
+            <div class="col-md-3 text-center text-md-start">
+                <h3 class="fw-bold">SLA</h3>
+                <p>She.Leads.Africa</p>
+
+                <p class="mb-1">Get Interactive with Us</p>
+                <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                    <a href="#" class="text-light"><i class="bi bi-instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#110707" d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104l.022.26l.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105l-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006l-.087-.004l-.171-.007l-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103l.003-.052l.008-.104l.022-.26l.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007l.172-.006l.086-.003l.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/></svg></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-youtube"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#110707" d="M18.5 0h-13A5.51 5.51 0 0 0 0 5.5v13A5.51 5.51 0 0 0 5.5 24h13a5.51 5.51 0 0 0 5.5-5.5v-13A5.51 5.51 0 0 0 18.5 0M20 16a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4Z"/><path fill="#110707" d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0-8 0m8-5a1 1 0 1 0 2 0a1 1 0 1 0-2 0"/></svg></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-twitter"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><g fill="none"><g clip-path="url(#SVGG1Ot4cAD)"><path fill="#110707" d="M11.025.656h2.147L8.482 6.03L14 13.344H9.68L6.294 8.909l-3.87 4.435H.275l5.016-5.75L0 .657h4.43L7.486 4.71zm-.755 11.4h1.19L3.78 1.877H2.504z"/></g><defs><clipPath id="SVGG1Ot4cAD"><path fill="#fff" d="M0 0h14v14H0z"/></clipPath></defs></g></svg></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#110707" stroke-linejoin="round" stroke-width="1.5" d="M6.182 10.333c-.978 0-1.182.192-1.182 1.111v1.667c0 .92.204 1.111 1.182 1.111h2.363v6.667c0 .92.205 1.111 1.182 1.111h2.364c.978 0 1.182-.192 1.182-1.111v-6.667h2.654c.741 0 .932-.135 1.136-.806l.507-1.666c.349-1.149.133-1.417-1.137-1.417h-3.16V7.556c0-.614.529-1.112 1.181-1.112h3.364c.978 0 1.182-.191 1.182-1.11V3.11C19 2.191 18.796 2 17.818 2h-3.364c-3.263 0-5.909 2.487-5.909 5.556v2.777z" clip-rule="evenodd"/></svg></i></a>
+                </div>
+            </div>
+
+            <!-- She Leads Africa Links -->
+            <div class="col-md-2 text-center text-md-start">
+                <h6 class="fw-bold">She Leads Africa</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Resources -->
+            <div class="col-md-2 text-center text-md-start">
+                <h6 class="fw-bold">Resources</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">Advice</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Guide</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">SLAY Festival</a></li>
+                </ul>
+            </div>
+
+            <!-- Discover -->
+            <div class="col-md-2 text-center text-md-start">
+                <h6 class="fw-bold">Discover</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">MMI</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">SMB</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">HGCP</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Contribute</a></li>
+                </ul>
+            </div>
+
+            <!-- Business -->
+            <div class="col-md-3 text-center text-md-start">
+                <h6 class="fw-bold">Want to do business with us?</h6>
+                <p>Email us at<br>
+                    <a href="mailto:info@sheleadsafrica.org" class="text-light text-decoration-none">
+                        info@sheleadsafrica.org
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="text-center border-top border-secondary pt-3 mt-4">
+            <small>© 2024 SHE LEADS AFRICA. All Rights Reserved.</small>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap Icons -->
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
