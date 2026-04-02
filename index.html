@@ -42,6 +42,14 @@
       color: white;
 
     }
+     #tobi .ttt{
+      display: none;
+      font-size: 12px;
+    } 
+    #tobi:hover .ttt {
+      display: inline;
+      background-color: #006ba3;
+    }
 
   .carousel {
   margin-bottom: 0;
@@ -84,6 +92,23 @@
   .btn-custom:hover {
   background-color: #006ba3;
   color: white;
+  }
+  ::placeholder {
+    color: white;
+  }
+  input {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+  #submit-btn {
+    border-radius: 12px;
+    background-color: #0087db;
+    width: 80px;
+  }
+  #submit-btn:hover {
+    background-color: #ffffff;
+    color: black;
   }
 
 
@@ -278,12 +303,17 @@
         <div class="row g-4">
 
           <!-- LEFT COLUMN (ALWAYS TOP ON LARGE SCREEN) -->
-          <div class="col-12 col-lg-6 text-lg-start">
+          <div class="col-12 col-lg-6 text-lg-start" >
             <h6 class="text-primary fw-bold">Impacted women globally and in Africa</h6>
 
-            <a href="#" class="btn btn-primary px-4 py-2 fw-semibold mt-3">
-              Download the SLA 2015-2025 Impact Report Here
-            </a>
+           
+              <button class="btn nav-btn" style="width: 300px;">
+         
+        <span class="hidden-text"> 
+            Download the SLA 2015-2025 Impact Report Here
+          </span>
+
+        </button>
           </div>
 
           <!-- RIGHT COLUMN (IMAGE) -->
@@ -467,11 +497,14 @@
         <img src="https://sheleadsafrica.org/wp-content/uploads/2023/11/pattern.png" class="card-img" alt="..."
           style="height: 450px;">
         <div class="card-img-overlay">
-          <h5 class="card-title bg-info border border-info text-white p-2" style="border-radius: 12px;height: 40px;">
+          <h5 class="card-title bg-info border border-info text-white p-2 mx-auto" style="border-radius: 12px;height: 40px;width: 500px;">
             Subscribe To Our Newsletter</h5>
-          <p class="card-text">Join SLA's community of young, ambitious and vibrant women across Africa</p>
-          <p class="card-text"> <input class="btn" name="" placeholder="Enter your email"><button
-              class="btn btn-primary border border-danger" type="button">Submit</button></p>
+          <h1 class="card-text text-white">Join SLA's community of <br> young,  ambitious and vibrant <br> women across Africa</h1>
+          <p class="card-text"> 
+            <div class="btn btn-primary border-light" pl>
+              <input class=" border-0"  name="" placeholder="your email" type="email" style="background-color: transparent; color: lightgray; width: 250px;">
+            <button class="btn" type="button" id="submit-btn"><a href="#" class="text-decoration-none">submit</a></button>
+            </div></p>
         </div>
       </div> 
 
@@ -480,7 +513,7 @@
           <div class="row gy-4">
 
             <!-- Logo + Socials -->
-            <div class="col-md-3 text-center text-md-start"> 
+            <div class="col-md-3 text-center text-md-start">  
               <h3 class="fw-bold">SLA</h3> 
                <p>She.Leads.Africa</p> 
 
